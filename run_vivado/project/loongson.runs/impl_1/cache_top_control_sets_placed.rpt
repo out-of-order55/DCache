@@ -1,0 +1,94 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Apr  9 12:27:08 2024
+| Host         : gb running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file cache_top_control_sets_placed.rpt
+| Design       : cache_top
+| Device       : xc7a200t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    25 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    16 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              90 |           26 |
+| Yes          | No                    | No                     |              28 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             456 |          148 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|      Clock Signal      |            Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  clk_pll/inst/clk_out1 | cache/TAGV[1].TAGV/E[0]             | cache/uncache/SR[0]                 |                4 |              8 |
+|  clk_pll/inst/clk_out1 | data[2][104]_i_1_n_0                | cache/uncache/SR[0]                 |                7 |             23 |
+|  clk_pll/inst/clk_out1 | data[1][104]_i_1_n_0                | cache/uncache/SR[0]                 |                5 |             23 |
+|  clk_pll/inst/clk_out1 | data[0][104]_i_1_n_0                | cache/uncache/SR[0]                 |               11 |             23 |
+|  clk_pll/inst/clk_out1 | tag                                 | cache/uncache/SR[0]                 |                9 |             23 |
+|  clk_pll/inst/clk_out1 |                                     |                                     |                9 |             25 |
+|  clk_pll/inst/clk_out1 |                                     | wait_cnt0                           |                7 |             27 |
+|  clk_pll/inst/clk_out1 | cache/uncache/axi_raddr[31]_i_2_n_0 | cache/uncache/axi_raddr[31]_i_1_n_0 |                8 |             28 |
+|  clk_pll/inst/clk_out1 | cache/uncache/axi_arvalid_reg_0[0]  |                                     |                7 |             28 |
+|  clk_pll/inst/clk_out1 | cache/uncache/rpl_data[95]_i_1_n_0  | cache/uncache/SR[0]                 |               14 |             32 |
+|  clk_pll/inst/clk_out1 | cache/uncache/rpl_data[31]_i_1_n_0  | cache/uncache/SR[0]                 |               12 |             32 |
+|  clk_pll/inst/clk_out1 | cache/uncache/rpl_data[63]_i_1_n_0  | cache/uncache/SR[0]                 |               10 |             32 |
+|  clk_pll/inst/clk_out1 | cache/uncache/E[0]                  | cache/uncache/SR[0]                 |               12 |             32 |
+|  clk_pll/inst/clk_out1 |                                     | cache/uncache/SR[0]                 |               19 |             63 |
+|  clk_pll/inst/clk_out1 | cache/cache_addr_ok                 | cache/uncache/SR[0]                 |               24 |             72 |
+|  clk_pll/inst/clk_out1 | cache/uncache/data_ok               | cache/uncache/SR[0]                 |               32 |            128 |
++------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,291 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Apr  9 12:07:08 2024
+# Process ID: 4324
+# Current directory: C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6908 C:\Users\Legion\Desktop\loongarch\mycpu_env\module_verify\cache_verify\run_vivado\project\loongson.xpr
+# Log file: C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/vivado.log
+# Journal file: C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/loongson.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cache_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source ysyx_23060024_ICACHE.tcl
+restart
+run 14 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_top.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/addr_ok}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/data_ok}} 
+run 14 us
+run all
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/rst}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/read_op}} {{/tb_top/cache_top/cache/write_op}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_hit}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_whit_way0}} {{/tb_top/cache_top/cache/cache_whit_way1}} {{/tb_top/cache_top/cache/cache_rhit_way0}} {{/tb_top/cache_top/cache/cache_rhit_way1}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_miss_signal}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_miss}} 
+restart
+run 14 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/rtagv}} 
+restart
+run 14 us
+relaunch_sim
+relaunch_sim
+restart
+run 14 us
+run 14 us
+run 14 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/\WAY0[0].DATA_WAY0 /RAM}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/\TAGV[0].TAGV /RAM}} 
+restart
+run 14 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/data_ok}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/tagv_valid}} {{/tb_top/cache_top/cache/data_valid}} {{/tb_top/cache_top/cache/lru_valid}} {{/tb_top/cache_top/cache/dirty_valid}} 
+restart
+run 14 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_index}} 
+restart
+run 14 us
+relaunch_sim
+run 14 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_miss}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/axi_wvalid}} {{/tb_top/cache_top/cache/uncache/axi_wdata}} {{/tb_top/cache_top/cache/uncache/axi_awaddr}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/dirty_wsignal}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cache_miss_signal}} 
+restart
+run 14 us
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/state}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/wr_req}} {{/tb_top/cache_top/cache/uncache/wr_type}} {{/tb_top/cache_top/cache/uncache/wr_addr}} {{/tb_top/cache_top/cache/uncache/wr_wstrb}} {{/tb_top/cache_top/cache/uncache/wr_data}} {{/tb_top/cache_top/cache/uncache/wr_rdy}} {{/tb_top/cache_top/cache/uncache/axi_awaddr}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/data_ok}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/rd_req}} {{/tb_top/cache_top/cache/uncache/rd_type}} {{/tb_top/cache_top/cache/uncache/rd_addr}} {{/tb_top/cache_top/cache/uncache/rd_rdy}} {{/tb_top/cache_top/cache/uncache/ret_valid}} {{/tb_top/cache_top/cache/uncache/ret_last}} {{/tb_top/cache_top/cache/uncache/ret_data}} 
+restart
+run 14 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cahce_miss_p}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/dirty_signal}} 
+relaunch_sim
+relaunch_sim
+run 14 us
+run 14 us
+run 14 us
+restart
+run 14 us
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/replace_data}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/rpl_data}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cnt}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cache_r}} {{/tb_top/cache_top/cache/uncache/cache_w}} {{/tb_top/cache_top/cache/uncache/cache_wdata}} {{/tb_top/cache_top/cache/uncache/cache_wstrb}} 
+restart
+run 6 us
+relaunch_sim
+run 6 us
+relaunch_sim
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/wdata}} {{/tb_top/cache_top/cache/wstrb}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/index}} {{/tb_top/cache_top/cache/tag}} {{/tb_top/cache_top/cache/offset}} {{/tb_top/cache_top/cache/rdata}} {{/tb_top/cache_top/cache/wdata}} {{/tb_top/cache_top/cache/wstrb}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cache_offset}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cache_miss_signal}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/valid}} 
+restart
+run 6 us
+restart
+run 6 us
+restart
+run 6 us
+relaunch_sim
+relaunch_sim
+run 6 us
+relaunch_sim
+relaunch_sim
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/main_state}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_hit}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_hit}} {{/tb_top/cache_top/cache/tagv_valid}} {{/tb_top/cache_top/cache/data_valid}} {{/tb_top/cache_top/cache/lru_valid}} {{/tb_top/cache_top/cache/dirty_valid}} 
+restart
+run 6 us
+restart
+relaunch_sim
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_way0_wdata}} {{/tb_top/cache_top/cache/cache_way0_wstrb}} {{/tb_top/cache_top/cache/cache_way1_wdata}} {{/tb_top/cache_top/cache/cache_way1_wstrb}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/tag_r}} {{/tb_top/cache_top/cache/offset_r}} {{/tb_top/cache_top/cache/index_r}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/way_sel}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_dirty_wsignal}} {{/tb_top/cache_top/cache/dirty_wdata}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+log_wave {/tb_top/cache_top/cache/cache_miss} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_miss}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_w}} {{/tb_top/cache_top/cache/cache_r}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_data_ok}} 
+restart
+run 6 us
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/way0_wstrb}} {{/tb_top/cache_top/cache/way1_wstrb}} 
+restart
+run 6 us
+relaunch_sim
+restart
+run 6 us
+relaunch_sim
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_lru_wsignal}} {{/tb_top/cache_top/cache/lru_wdata}} {{/tb_top/cache_top/cache/tagv_wdata}} {{/tb_top/cache_top/cache/cache_tagv_wsiganl}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/rtagv}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/tag_r}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/lru_message}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_lru_wsignal}} {{/tb_top/cache_top/cache/lru_wdata}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_whit_way0}} {{/tb_top/cache_top/cache/cache_whit_way1}} {{/tb_top/cache_top/cache/cache_rhit_way0}} {{/tb_top/cache_top/cache/cache_rhit_way1}} 
+restart
+run 6 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_index}} {{/tb_top/cache_top/cache/cache_dirty}} {{/tb_top/cache_top/cache/cache_wstrb}} {{/tb_top/cache_top/cache/cache_tag}} {{/tb_top/cache_top/cache/cache_offset}} {{/tb_top/cache_top/cache/cache_wdata}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_write_op}} {{/tb_top/cache_top/cache/cache_read_op}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/cache_lru}} 
+restart
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/uncache/cache_wdata}} 
+relaunch_sim
+run 6 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_top/cache_top/cache/tagv_wdata}} {{/tb_top/cache_top/cache/cache_tagv_wsiganl}} 
+restart
+run 6 us
+relaunch_sim
+run 6 us
+save_wave_config {C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg
+set_property xsim.view C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg
+source tb_top.tcl
+run 6 us
+relaunch_sim
+run 6 us
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/cache_top/ret_valid}} {{/tb_top/cache_top/ret_data}} 
+restart
+run 6 us
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/cache_top/cache/ret_last}} 
+restart
+run 6 us
+save_wave_config {C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg}
+close_sim

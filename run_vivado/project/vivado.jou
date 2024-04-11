@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 11 11:41:15 2024
+# Process ID: 20652
+# Current directory: C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8492 C:\Users\Legion\Desktop\loongarch\mycpu_env\module_verify\cache_verify\run_vivado\project\loongson.xpr
+# Log file: C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/vivado.log
+# Journal file: C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/loongson.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/ysyx_23060024_ICACHE.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/ysyx_23060024_ICACHE.v
+launch_simulation
+open_wave_config C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg
+source tb_top.tcl
+run 6 us
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/cache_top/cache/ret_last}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/cache_top/cache/uncache/axi_arvalid}} {{/tb_top/cache_top/cache/uncache/axi_raddr}} 
+restart
+run 6 us
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/cache_top/cache/uncache/rd_rdy}} 
+restart
+run 6 us
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/cache_top/cache/uncache/ret_valid}} 
+relaunch_sim
+run 6 us
+run all
+save_wave_config {C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/run_vivado/project/tb_top_behav.wcfg}
+close_sim

@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/xilinx_ip/clk_pll_sim_netlist.v" \
+"../../../../../../rtl/RAM_256X21.v" \
+"../../../../../../rtl/RAM_256X32.v" \
+"../../../../../../rtl/Regfile_256X1.v" \
+"../../../../../../rtl/cache.v" \
+"../../../../../../rtl/cache_top.v" \
+"../../../../../../rtl/uncache.v" \
+"../../../../../../testbench/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

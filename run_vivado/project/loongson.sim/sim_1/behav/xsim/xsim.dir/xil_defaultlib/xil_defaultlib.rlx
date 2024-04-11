@@ -1,0 +1,12 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/RAM_256X21.v,1712637963,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/RAM_256X32.v,,RAM_256X21,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/RAM_256X32.v,1712637959,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/Regfile_256X1.v,,RAM_256X32,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/Regfile_256X1.v,1712637933,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v,,Regfile_256X1,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v,1712676974,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache_top.v,,cache,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache_top.v,1710383888,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/uncache.v,,cache_top,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/uncache.v,1712810152,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/testbench/testbench.v,,uncache,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/xilinx_ip/clk_pll_sim_netlist.v,1712636321,verilog,,C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/RAM_256X21.v,,clk_pll;clk_pll_clk_pll_clk_wiz;glbl,,,,,,,,
+C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/testbench/testbench.v,1710383888,verilog,,,,tb_top,,,,,,,,

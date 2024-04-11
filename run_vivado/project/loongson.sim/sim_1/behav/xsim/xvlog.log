@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/xilinx_ip/clk_pll_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_pll_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/RAM_256X21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_256X21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/RAM_256X32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_256X32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/Regfile_256X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_256X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+WARNING: [VRFC 10-3248] data object 'cache_index' is already declared [C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v:90]
+WARNING: [VRFC 10-3703] second declaration of 'cache_index' ignored [C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v:90]
+INFO: [VRFC 10-2458] undeclared symbol cache_hezard, assumed default net type wire [C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v:182]
+INFO: [VRFC 10-2458] undeclared symbol dirty_signal, assumed default net type wire [C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v:205]
+INFO: [VRFC 10-2458] undeclared symbol dirty_wdata, assumed default net type wire [C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache.v:256]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_top
+INFO: [VRFC 10-2458] undeclared symbol clk_g, assumed default net type wire [C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/cache_top.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/rtl/uncache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uncache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Legion/Desktop/loongarch/mycpu_env/module_verify/cache_verify/testbench/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
